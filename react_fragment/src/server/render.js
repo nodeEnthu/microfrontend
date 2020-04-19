@@ -48,18 +48,13 @@ function render(req, res) {
 
 function renderFullPage(html, preloadedState) {
   return `
-    <html>
-      <body>
-        <div>
-          <div id="root">${html}</div>
-          <script>
-            window.__PRELOADED_STATE__ = ${serialize(preloadedState)}
-          </script>
-          <script src="dist/main.js"></script>
-          <script src="dist/base.js"></script>
-        </div>
-      </body>
-    </html>
+      <div>
+        <div id="root">${html}</div>
+        <script>
+          window.__PRELOADED_STATE__ = ${serialize(preloadedState)}
+        </script>
+        <script src="dist/main.js"></script>
+      </div>
   `
 }
 

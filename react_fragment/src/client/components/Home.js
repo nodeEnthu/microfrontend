@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 class Home extends Component {
 
   componentDidMount() {
-    console.log(window);
     window.PubSubHeader.subscribe(this, "header-login-click", function() {
       alert("I hear the login click");
     })

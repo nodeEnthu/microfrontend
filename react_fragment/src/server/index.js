@@ -16,7 +16,6 @@ app.use(require("webpack-hot-middleware")(compiler));
 app.use('/dist', express.static('dist'))
 
 app.get("*", (req, res, next) => {
-  console.log("I get called: ", req.url);
   render(req, res)
 })
 
