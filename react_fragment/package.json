@@ -40,6 +40,6 @@
     "react-router-config": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
-    "serialize-javascript": "^2.1.0"
+    "serialize-javascript": "^2.1.1"
   }
 }
